@@ -27,6 +27,19 @@ method2-1
 遍历整个数组，依次做异或运算。由于异或在位运算时相同为0，不同为1，因此所有出现偶数次的整数都会相互抵消变成0，只有唯一出现奇数次的整数会被留下。
 
 假设数组长度是N，那么该解法的时间复杂度是O（N），空间复杂度是O（1）。
+异或：相同的两个元素a^b的结果为0. 0^a = a
+
+题目第二次扩展：一个无序数组里有若干个正整数，范围从1到100，
+其中98个整数都出现了偶数次，只有两个整数出现了奇数次（比如1,1,2,2,3,4,5,5），
+如何找到这个出现奇数次的整数？
+遍历整个数组，依次做异或运算。由于数组存在两个出现奇数次的整数，所以最终异或的结果，等同于这两个整数的异或结果。这个结果中，至少会有一个二进制位是1（如果都是0，说明两个数相等，和题目不符）。
+
+举个例子，如果最终异或的结果是5，转换成二进制是00000101。
+此时我们可以选择任意一个是1的二进制位来分析，比如末位。
+把两个奇数次出现的整数命名为A和B，如果末位是1，说明A和B转为二进制的末位不同，
+必定其中一个整数的末位是1，另一个整数的末位是0
+
+分治法，找到特征
 '''
 # method 1
 mylist= [1,2,3,4,5,6,7,8,9,10]
@@ -59,10 +72,16 @@ def method4(mylist,unorder_list):
 	return total_value-bad_value
 
 def method2_1(mylist):
-	for i in range(len(mylist)):
+	result = mylist[0]
+	for i in range(1,len(mylist)):
+		result = result^mylist[i]
+	return result
 		
 
 if __name__ == '__main__':
 	# print method1(mylist,unorder_list)
-	print method4(mylist,unorder_list)
+	# print method4(mylist,unorder_list)
 	new_list =[1,1,2,2,4,4,5,6,6]
+	print method2_1(new_list)
+
+	print 3^3^2
