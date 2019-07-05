@@ -4,7 +4,7 @@ import math
 import os
 '''
 通过dir可以获取模块的函数
-
+getsize
 '''
 def test_math():
 	for item in dir(math):
