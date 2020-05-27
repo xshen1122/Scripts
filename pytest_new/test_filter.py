@@ -5,6 +5,7 @@ from collections import Counter
 from random import randint
 from collections import OrderedDict
 from collections import deque
+from collections import Iterable,Iterator
 import re
 '''
 问题：
@@ -63,6 +64,8 @@ reduce(lambda a,b: a&b, new_list)
 如果一次抓取所有城市天气再显示，显示第一个城市气温时，有很高的延时，并且浪费存储空间，我们
 期望以“用时访问”的策略，并且能把所有城市气温封装在一个对象里，可用for进行迭代。
 
+1. 实现一个迭代器对象WeatherIterator, next方法每次返回一个城市气温
+2. 实现一个可迭代对象WeatherIterable, __iter__方法返回一个迭代器对象
 
 '''
 mylist= [3,9,-1,10,20,-2]
