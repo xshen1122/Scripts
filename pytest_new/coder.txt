@@ -1,0 +1,1137 @@
+Login <https://forum.kodi.tv/member.php?action=login> Register
+<https://forum.kodi.tv/member.php?action=register>
+
+
+  Login at Kodi Home
+
+Kodi Logo
+
+*Welcome to Kodi Community Forum!*
+Please login using the form on the right.
+
+*Not our member yet? What are you waiting for?*
+
+// Register <https://forum.kodi.tv/member.php?action=register>
+
+//
+//
+Remember me
+// Login
+Lost password <https://forum.kodi.tv/member.php?action=lostpw>
+
+Toggle navigation
+Kodi Logo <https://forum.kodi.tv/>
+
+  * News <https://kodi.tv/blog>
+  * Wiki <https://kodi.wiki/>
+  * Code <https://github.com/xbmc/xbmc>
+  * Bug Tracker <https://github.com/xbmc/xbmc/issues>
+  * Download <https://kodi.tv/download>
+  * Donate <https://kodi.tv/contribute/donate>
+
+//
+// <https://forum.kodi.tv/index.php> > Support
+<https://forum.kodi.tv/forumdisplay.php?fid=33> > General Support
+<https://forum.kodi.tv/forumdisplay.php?fid=111> > Windows
+<https://forum.kodi.tv/forumdisplay.php?fid=59> > Release -  Kodi Matrix
+19.0 HDR Windows API <https://forum.kodi.tv/showthread.php?tid=349861>
+
+  * // <https://www.facebook.com/XBMC/>
+  * // <https://twitter.com/KodiTV>
+  * // <https://www.youtube.com/user/teamxbmc>
+  * // <https://github.com/xbmc/xbmc>
+  * // <https://forum.kodi.tv/syndication.php>
+  * Donate <https://kodi.tv/contribute/donate>
+
+
+  * 1(current) <#>
+  * 2 <https://forum.kodi.tv/showthread.php?tid=349861&page=2>
+  * 3 <https://forum.kodi.tv/showthread.php?tid=349861&page=3>
+  * 4 <https://forum.kodi.tv/showthread.php?tid=349861&page=4>
+  * 5 <https://forum.kodi.tv/showthread.php?tid=349861&page=5>
+  * 58 <https://forum.kodi.tv/showthread.php?tid=349861&page=58>
+  * Next // <https://forum.kodi.tv/showthread.php?tid=349861&page=2>
+     //  <https://forum.kodi.tv/showthread.php?tid=349861&page=2>
+    //
+      o Jump to page:
+
+ 
+*Thread Rating:
+
+*
+
+  * 2 Vote(s) - 4.5 Average
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=5&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=4&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=3&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=2&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=1&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+
+*Release Kodi Matrix 19.0 HDR Windows API
+
+* //
+<https://forum.kodi.tv/usercp2.php?action=addsubscription&tid=349861&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+*jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066>* //
+Senior Member
+Posts: 286
+Joined: Oct 2011
+Reputation: *91* <https://forum.kodi.tv/reputation.php?uid=104066>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066> //
+Senior Member
+Posts: 286
+*#1
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2905985#pid2905985>*
+2019-12-06, 22:59 (This post was last modified: 2020-05-20, 12:01 by
+jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066>.
+Edited 15 times in total. /Edit Reason: new version/ )
+Kodi Matrix 19.0 HDR Windows API (forked from Kodi 19 alpha master)
+
+ 
+Inspired on work of @fandangos
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>, this fork
+offers same HDR functionality (currently more) without using proprietary
+Nvidia API.
+
+Thanks to this, is compatible with Intel, Nvidia, AMD and Ryzen hardware.
+ 
+ 
+KEY FEATURES
+ 
+
+  * Maximum 4K image quality with passthrough of HDR10 metadata
+    perfectly (independently verified with HDMI analyzer).
+  * Perfect adjustment of the display refresh rate to match with
+    content: 23.976 fps, 24.000 fps, etc.
+  * NEW: Auto switch HDR mode and color space. Enable this feature
+    from "Settings > Player > Use HDR display capabilities" = ON.
+  * Toggle HDR keymap, default assigned to 'F11' key, to toggle HDR
+    on/off from keyboard/remote (manual mode).
+  * No need to install external programs or addons. madVR, MPC-HC, LAV
+    filters, DSPlayer are not needed.
+  * Play the SDR content correctly with the Windows HDR switch ON,
+    although it is recommended for maximum quality to play the SDR
+    content with the Windows HDR switch OFF.
+  * On systems that do not have an HDR display, it playback HDR content
+    using tone mapping in both DXVA and pixel shaders (HDR to SDR
+    conversion).
+  * Fixed important bugs in the tone mapping function present in the
+    official versions of Kodi 18.5 and 19.0: very dark image or washed
+    colors.
+  * It supports the HLG (Hybrid Log-Gamma) format used for HDR in Live
+    TV broadcasts. Compatible with the "IPTV PVR Simple client" addon
+    but in the future more addons can be created / updated supporting it.
+  * All HDR functionality has been implemented using only the standard
+    Microsoft Windows API. It does not use pre-compiled external
+    libraries or proprietary APIs from Intel or Nvidia. It does not use
+    hacks that only work for a specific type of HW, therefore, it is
+    highly compatible with most Intel, Nvidia, AMD or Ryzen HDMI 2.0
+    graphics cards.
+  * Improved swapchain performance using some new DX12 / Windows 10
+    features.
+  * Fixed NVIDIA only related stuttering/tearing issues. These are also
+    common for 1080p SDR content but it's less obvious (still present in
+    18.5 / 19 master and can affect some users).
+
+
+Tested on Intel NUC 8i3BEK + Denon AVX-1600H + Sony TV KD-55AG9 OLED.
+
+and
+
+Asus Maximus XI Hero + Nvidia GTX1650 +  Denon AVX-1600H + Sony TV
+KD-55AG9 OLED
+
+Also works on AMD and Ryzen hardware.
+
+Test results on other hardware are welcomed. Smile
+
+
+RECOMMENDED SETTINGS
+
+KODI:
+Settings > System > Display:
+
+  * Resolution 3840 x 2160 (4K)
+  * Use full screen window = OFF (real full screen)
+  * Delay after change refresh rate = 1.5 - 3 seconds
+  * Use limited color range = OFF (full range)
+
+Settings > Player:
+
+  * Adjust display refresh rate = On start/stop
+  * Render method = Auto detect
+  * Allow hardware acceleration DXVA2 = ON
+  * Use display HDR capabilities = ON (enable auto switch HDR mode and
+    color space)
+
+
+GRAPHICS CONTROL PANEL:
+
+  * Refresh rate: 59 or 60 Hz  (for Windows desktop and Kodi GUI)
+  * Color space: RGB 8bit   (driver auto-switch 10 or 12 bit when is
+    output HDR10 signal)
+  * Signal range:  0 - 255 / full range
+  * Video settings (HW decoding):  All default or "application
+    controlled". All contrast / color enhancements = OFF (can cause
+    artifacts).
+
+
+TV:
+
+  * HDMI video range: Auto detection or full range / black level high
+  * Color space: Auto detection
+  * HDR mode: Auto detection
+
+
+
+DOWNLOAD
+
+https://github.com/thexai/xbmc/releases
+<https://github.com/thexai/xbmc/releases>
+
+
+SOURCE
+
+https://github.com/thexai/xbmc <https://github.com/thexai/xbmc>
+
+
+CHANGE LOG
+
+Version 3.6.4
+Updated at 20-05-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits.
+No changes in HDR code.
+
+
+Version 3.6.3
+Updated at 09-05-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits: increased various add-on
+API's version.
+No changes in HDR code.
+
+
+Version 3.6.2
+Updated at 30-04-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits: fixed seek on interlaced
+content DXVA.
+No changes in HDR code.
+
+
+Version 3.6.1
+Updated at 25-04-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits: increased addons API's
+(inputstream v2.3.0, PVR v6.4.0) and other updates.
+No changes in HDR code.
+
+
+Version 3.6.0
+Updated at 18-04-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits: ISO BluRay is now part of
+master branch, libdav1d, spdlog, inputstream bump API to v2.2.0 and many
+other changes.
+No important changes in HDR code, only some fixes in log code after
+spdlog merge.
+
+
+Version 3.5.0
+Updated at 09-04-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits: includes fix for libraries
+sorting by date, add-ons updates and other issues.
+Re-enabled ISO BluRay support using libudfread (although it has not yet
+merged into master branch).
+More robust DXVA code in tone mapping mode: avoids potential apply
+double mappings in some systems.
+
+
+Version 3.4.0
+Updated at 02-04-2020 (forked from Kodi 19 alpha master).
+
+Reverted master branch commits to 18-feb to fix ISO BluRay bug,
+incorrect libraries sorting by date (year 1601 bug) and other issues.
+Fixed bad render HDR10 sources on some non HDR capable systems using
+DXVA render method.
+Lighter installer since it does not include binary addons (they are also
+downloaded from the repository).
+
+
+Version 3.3.1
+Updated at 28-03-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits (fix some addons related crashes).
+No changes in HDR code.
+
+
+Version 3.3.0
+Updated at 23-03-2020 (forked from Kodi 19 alpha master).
+
+Fixed oversaturated HLG colors.
+Switch Windows HDR off on every stop when is played HDR content.
+Updated with latest master branch commits.
+
+
+Version 3.2.1
+Updated at 14-03-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits.
+No changes in HDR code.
+
+
+Version 3.2.0
+Updated at 06-03-2020 (forked from Kodi 19 alpha master).
+
+On screen notification when toggle HDR with 'F11' key (manual mode).
+Removed toggle HDR from power options menu and all associated code.
+Improved display HDR detection/status if system has multiple displays
+HDR or Kodi is using a non HDR display in a system that has HDR display.
+Updated with latest master branch commits.
+
+
+Version 3.1.0
+Updated at 28-02-2020 (forked from Kodi 19 alpha master).
+
+Improved HDR auto-switch timings synchronization: playing not start
+until switch is finished.
+SDR is not restored on exit if auto switch setting is not enabled.
+Updated with latest master branch commits.
+
+
+Version 3.0.0
+Updated at 21-02-2020 (forked from Kodi 19 alpha master).
+
+Auto switch HDR mode and color space.
+Only toggles HDR in screen currently used by Kodi (if system has various
+HDR screens).
+Changed behavior of setting "Use display HDR capabilities": now enables
+HDR auto switch mode.
+Updated with latest master branch commits. Includes ffmpeg 4.2.2.
+
+
+Version 2.2.2
+Updated at 14-02-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits.
+Minor improvements in HDR code.
+
+
+Version 2.2.1
+Updated at 07-02-2020 (forked from Kodi 19 alpha master).
+
+In Windows 10 is used swapchain with 6 backbuffers for all content HDR /
+SDR / 3D.
+Updated with latest master branch commits. Includes libaacs decryption fix.
+Simplified code to turn HDR on/off when Kodi starts/exits.
+HDR display detection code refactored.
+
+
+Version 2.2.0
+Updated at 04-02-2020 (forked from Kodi 19 alpha master).
+
+'F11' keymap to toggle HDR on/off
+Restores original Windows HDR config when Kodi exits
+Refactor HDR display detection code
+Removed unneeded code
+
+
+Version 2.1.0
+Updated at 02-02-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits. Includes UHD BD improvements.
+Fix for 4K HDR 60 fps content (Gemini Man).
+Disabled Nvidia sharing textures (stuttering fix).
+SetMaximumFrameLatency to 1 again.
+Discrete decoding can use D3D_FEATURE_LEVEL_12_0.
+
+
+Version 2.0.0
+Updated at 01-02-2020 (forked from Kodi 19 alpha master).
+
+Improved swapchain with some DX12/Windows 10 exclusive features.
+Improved NVIDIA stability keeping low latency.
+Reduced video memory usage in HDR rendering (all graphics cards).
+
+
+Version 1.9.2
+Updated at 31-01-2020 (forked from Kodi 19 alpha master).
+
+Definitive cure for NVIDIA stuttering/tearing issues. (thanks @bentom)
+NVIDIA Control Panel 3D profile (power management) may be no longer
+necessary but leave it in 'Adaptive' may be a good practice.
+
+
+Version 1.9.1
+Updated at 28-01-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits. Fix some crashes related to
+Live TV / EPG.
+No changes in HDR code.
+
+
+Version 1.9.0
+Updated at 25-01-2020 (forked from Kodi 19 alpha master).
+
+Removed specific NVIDIA code to workaround tearing/stuttering issues.
+These are due to the power saving functionality in the drivers. It is
+solved by creating a maximum performance profile in NVIDIA control panel
+> 3D settings.  (more info => 2918948
+<https://forum.kodi.tv/showthread.php?pid=2918948#pid2918948> (post))
+Removed 'autoHDR' option in advancedsettings.xml. Now is used GUI
+setting in Settings > Player > Use HDR display capabilities.
+
+
+Version 1.8.1
+Updated at 23-01-2020 (forked from Kodi 19 alpha master).
+
+Fix NVIDIA HDR refresh rate match (tearing).
+Updated with latest master branch commits.
+
+
+Version 1.8.0
+Updated at 18-01-2020 (forked from Kodi 19 alpha master).
+
+Improves stability in NVIDIA HDR full screen switching.
+Improves detection of HDR display in some multi-screen escenarios.
+
+
+Version 1.7.5
+Updated at 14-01-2020 (forked from Kodi 19 alpha master).
+
+Updated with latest master branch commits. Fix some crashes due recent
+libraries updates.
+No changes in HDR code.
+
+
+Version 1.7.4
+Updated at 10-01-2020 (forked from Kodi 19 alpha master).
+
+New advancedsettings option 'autoHDR' to turn on display HDR when Kodi
+starts.
+
+
+Version 1.7.3
+Updated at 07-01-2020 (forked from Kodi 19 alpha master).
+
+Rebased to latest master. Now includes libbluray 1.1.2
+
+
+Version 1.7.2
+Updated at 06-01-2020 (forked from Kodi 19 alpha master).
+
+Eliminate rounding errors when handling HDR metadata.
+Updated with latest master branch commits.
+
+
+Version 1.7.1
+Updated at 05-01-2020 (forked from Kodi 19 alpha master).
+
+Power options menu closes dialog when toggle HDR is done.
+Code cleanup.
+
+
+Version 1.7.0
+Updated at 04-01-2020 (forked from Kodi 19 alpha master).
+
+Toggle display HDR on/off without restart.
+Internal code improvements.
+Fixed: small incorrectness DXVA HW tone mapping (clipped high luminance
+values).
+
+
+Version 1.6.1
+Updated at 31-12-2019 (forked from Kodi 19 alpha master).
+
+Some performance improvements.
+Internal code changes and refactorings.
+
+
+Version 1.6.0
+Updated at 27-12-2019 (forked from Kodi 19 alpha master).
+
+Fixed: bad image when is used pixel shaders render method in HDR source
+to SDR render.
+Several internal changes that do not affect functionality but are
+necessary to merge with Kodi master branch.
+
+
+Version 1.5.1
+Updated at 26-12-2019 (forked from Kodi 19 alpha master).
+
+Fixed: bad image when is used pixel shaders render method in HDR mode.
+Improved: prevents use tone mapping when HDR is active (regardless of
+settings).
+
+
+Version 1.5.0
+Updated at 24-12-2019 (forked from Kodi 19 alpha master).
+
+NEW: Toggles Windows HDR On/Off from power options menu.
+
+
+Version 1.4.1
+Updated at 19-12-2019 (forked from Kodi 19 alpha master).
+
+Fixed: very dark image in HDR10 to SRD conversion using DXVA HW tone
+mapping.
+
+
+Version 1.4.0
+Updated at 19-12-2019 (forked from Kodi 19 alpha master).
+
+Added support for HLG (Hybrid Log-Gamma) and Rec.2020 for Live TV
+
+
+Version 1.3.0
+Updated at 14-12-2019 (forked from Kodi 19 alpha master).
+
+Improved the detection of some HDR10 streams (The Mandalorian).
+Improved handle of changes in metadata at middle of stream.
+
+
+Version 1.2.0
+Updated at 11-12-2019 (forked from Kodi 19 alpha master).
+
+Fixed: Some streams 4K BT.2020 are incorrect detected as HDR resulting
+in bad image (live IPTV).
+Various improvements.
+
+
+Version 1.1.0
+Updated at 08-12-2019 (forked from Kodi 19 alpha master).
+
+New: Handle changes in static HDR metadata.
+New: Python 2 & Python 3 compatible versions.   
+
+
+Version 1.0.0:
+Updated at 06-12-2019 (forked from Kodi 19 alpha master).
+
+First release.
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=104066>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2905985>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2905985>
+<https://forum.kodi.tv/member.php?action=profile&uid=69729>
+**Wanilton* <https://forum.kodi.tv/member.php?action=profile&uid=69729>* //
+Donor
+Posts: 3,710
+Joined: Jun 2010
+Reputation: *242* <https://forum.kodi.tv/reputation.php?uid=69729>
+<https://forum.kodi.tv/member.php?action=profile&uid=69729>
+*Wanilton* <https://forum.kodi.tv/member.php?action=profile&uid=69729> //
+Donor
+Posts: 3,710
+*#2
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2905987#pid2905987>*
+2019-12-06, 23:03 (This post was last modified: 2019-12-06, 23:08 by
+Wanilton <https://forum.kodi.tv/member.php?action=profile&uid=69729>.)
+@jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066> 
+
+Thanks, but where is the source code with your changes? I check and the
+code in your github is the same master by Kodi Team...
+
+Do you have plans to share?
+
+PS Thanks for sharing the code, I will check..
+MediaBrazil forum Website <http://www.xbmcbrasil.net/portal.php> -
+Youtube Channel <https://www.youtube.com/channel/UCejZwH4LEQ1VLRet0y-tE_Q>
+Aeon MQ9-0.4.0 & Ace2
+<https://forum.kodi.tv/showthread.php?tid=347043> Skin Team
+MarcosQui Website <http://www.marcosqui.com.br/skin_english.html> Donate
+and support us.
+Reply
+Website <http://www.mediabrasil.tv/> Find
+<https://forum.kodi.tv/search.php?action=finduser&uid=69729>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2905987>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2905987>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+*jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066>* //
+Senior Member
+Posts: 286
+Joined: Oct 2011
+Reputation: *91* <https://forum.kodi.tv/reputation.php?uid=104066>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066> //
+Senior Member
+Posts: 286
+*#3
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2905990#pid2905990>*
+2019-12-06, 23:07
+
+    (2019-12-06, 23:03)Wanilton Wrote:
+    <https://forum.kodi.tv/showthread.php?pid=2905987#pid2905987>
+
+    @jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066> 
+
+    Thanks, but where is the source code with your changes? I check and
+    the code in your github is the same master by Kodi Team...
+
+    Do you have plans to share?
+
+
+Code is here:
+https://github.com/thexai/xbmc/commits/Windows-HDR
+<https://github.com/thexai/xbmc/commits/Windows-HDR>
+Wink
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=104066>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2905990>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2905990>
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>
+*fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031>* //
+Fan
+Posts: 549
+Joined: Jan 2014
+Reputation: *186* <https://forum.kodi.tv/reputation.php?uid=201031>
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>
+fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031> //
+Fan
+Posts: 549
+*#4
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2905992#pid2905992>*
+2019-12-06, 23:11 (This post was last modified: 2019-12-06, 23:17 by
+fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031>.)
+This is freaking cool Smile)
+
+You can use the DisplayConfig exe from my fork with this and have
+automatic hdr.
+
+I'll test this soon.
+
+Edit: Would you mind if I use part of your code to fix intel on my fork?
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=201031>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2905992>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2905992>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+*jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066>* //
+Senior Member
+Posts: 286
+Joined: Oct 2011
+Reputation: *91* <https://forum.kodi.tv/reputation.php?uid=104066>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066> //
+Senior Member
+Posts: 286
+*#5
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2905993#pid2905993>*
+2019-12-06, 23:20
+I haven't added it yet because it causes instability.
+
+It seems that Microsoft does not want to switch from outside...
+
+However, the SDR material is displayed well with the switch ON (but it
+is not ideal).
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=104066>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2905993>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2905993>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+*jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066>* //
+Senior Member
+Posts: 286
+Joined: Oct 2011
+Reputation: *91* <https://forum.kodi.tv/reputation.php?uid=104066>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066> //
+Senior Member
+Posts: 286
+*#6
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2905994#pid2905994>*
+2019-12-06, 23:24
+
+    (2019-12-06, 23:11)fandangos Wrote:
+    <https://forum.kodi.tv/showthread.php?pid=2905992#pid2905992>
+
+    Edit: Would you mind if I use part of your code to fix intel on my fork?
+
+
+Of course you can use it. But the goal is to be integrated all into the
+master branch.
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=104066>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2905994>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2905994>
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>
+*fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031>* //
+Fan
+Posts: 549
+Joined: Jan 2014
+Reputation: *186* <https://forum.kodi.tv/reputation.php?uid=201031>
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>
+fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031> //
+Fan
+Posts: 549
+*#7
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906000#pid2906000>*
+2019-12-06, 23:50
+
+    (2019-12-06, 23:24)jogal Wrote:
+    <https://forum.kodi.tv/showthread.php?pid=2905994#pid2905994>
+
+        (2019-12-06, 23:11)fandangos Wrote:
+        <https://forum.kodi.tv/showthread.php?pid=2905992#pid2905992>
+
+        Edit: Would you mind if I use part of your code to fix intel on
+        my fork?
+
+
+    Of course you can use it. But the goal is to be integrated all into
+    the master branch. 
+
+Yes, I'm aware of that and I think this is the way to go forward, in my
+opinion. 
+
+Still, we need to figure out a way to switch HDR on and OFF. Watching a
+SDR content if nothing is over 100nits it's a waste of eletrict power
+and causes the LEDs on TVs to die quicker. 
+Also, it would be a great addition if someone with a HDFury or some sort
+of capture device that can handles HDR could experiment both methods,
+private APIs and Windows API and check if the metadata is passed
+correctly now. 
+
+I've seen people debating about this and Madshi also mentioned the
+metadata problem with me. So if microsoft fixed it we are one step
+closer for a true Windows solution.
+
+About the switching, the DisplayConfig source code is on my Git, maybe
+it won't crash if used within Kodi with your code.
+
+And I have to ask, you seem to be a way better coder than I am, would
+you be willing to take a look at libbluray? Smile
+I've tried but I can't fix it.
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=201031>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906000>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906000>
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>
+*fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031>* //
+Fan
+Posts: 549
+Joined: Jan 2014
+Reputation: *186* <https://forum.kodi.tv/reputation.php?uid=201031>
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>
+fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031> //
+Fan
+Posts: 549
+*#8
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906003#pid2906003>*
+2019-12-07, 00:05 (This post was last modified: 2019-12-07, 00:15 by
+fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031>.)
+Tested your fork with Nvidia hardware.  (in case it's not clear it
+works!) Smile)
+
+Now I understand the switch, you need to turn it on, but while not
+playing HDR content Kodi will remain SDR and HDR will be disabled. 
+It's way better than I had imagined. 
+
+Also it might be a good idea to toggle tone mapping OFF if HDR is detected. 
+I have it off by default on my Git but the code location and what needs
+to be changed are there. 
+
+Also in VideoDatabase you can see that tone mapping will be set ON again
+in case the user changes anything like subtitles, audio languages etc. 
+So this needs to be addressed too. 
+I have disabled it on my git, in case you want to look into this.
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=201031>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906003>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906003>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+*jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066>* //
+Senior Member
+Posts: 286
+Joined: Oct 2011
+Reputation: *91* <https://forum.kodi.tv/reputation.php?uid=104066>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066> //
+Senior Member
+Posts: 286
+*#9
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906009#pid2906009>*
+2019-12-07, 00:12 (This post was last modified: 2019-12-07, 00:14 by
+jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066>.)
+
+    (2019-12-06, 23:50)fandangos Wrote:
+    <https://forum.kodi.tv/showthread.php?pid=2906000#pid2906000>
+
+        (2019-12-06, 23:24)jogal Wrote:
+        <https://forum.kodi.tv/showthread.php?pid=2905994#pid2905994>
+
+            (2019-12-06, 23:11)fandangos Wrote:
+            <https://forum.kodi.tv/showthread.php?pid=2905992#pid2905992>
+
+            Edit: Would you mind if I use part of your code to fix intel
+            on my fork?
+
+
+        Of course you can use it. But the goal is to be integrated all
+        into the master branch.   
+
+    Yes, I'm aware of that and I think this is the way to go forward, in
+    my opinion. 
+
+    Still, we need to figure out a way to switch HDR on and OFF.
+    Watching a SDR content if nothing is over 100nits it's a waste of
+    eletrict power and causes the LEDs on TVs to die quicker. 
+    Also, it would be a great addition if someone with a HDFury or some
+    sort of capture device that can handles HDR could experiment both
+    methods, private APIs and Windows API and check if the metadata is
+    passed correctly now. 
+
+    I've seen people debating about this and Madshi also mentioned the
+    metadata problem with me. So if microsoft fixed it we are one step
+    closer for a true Windows solution. 
+
+
+I have no way of knowing if the metadata is passed in a strictly correct
+way but comparing the image with of the internal TV player (Android TV)
+is identical. For me now is OK.
+
+In any case, this is far better than nothing (in the master branch). 
+
+Logically, can always be improved from this starting point.
+
+Your solution works well on NVIDIA hw however it cannot be included as
+it is in the master branch.
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=104066>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906009>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906009>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+*jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066>* //
+Senior Member
+Posts: 286
+Joined: Oct 2011
+Reputation: *91* <https://forum.kodi.tv/reputation.php?uid=104066>
+<https://forum.kodi.tv/member.php?action=profile&uid=104066>
+jogal <https://forum.kodi.tv/member.php?action=profile&uid=104066> //
+Senior Member
+Posts: 286
+*#10
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906013#pid2906013>*
+2019-12-07, 00:20
+
+    (2019-12-07, 00:05)fandangos Wrote:
+    <https://forum.kodi.tv/showthread.php?pid=2906003#pid2906003>
+
+    Tested your fork with Nvidia hardware.  (in case it's not clear it
+    works!) Smile)
+
+Cool
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=104066>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906013>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906013>
+<https://forum.kodi.tv/member.php?action=profile&uid=19141>
+**ashlar* <https://forum.kodi.tv/member.php?action=profile&uid=19141>* //
+Donor
+Posts: 3,191
+Joined: Mar 2006
+Reputation: *95* <https://forum.kodi.tv/reputation.php?uid=19141>
+<https://forum.kodi.tv/member.php?action=profile&uid=19141>
+*ashlar* <https://forum.kodi.tv/member.php?action=profile&uid=19141> //
+Donor
+Posts: 3,191
+*#11
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906014#pid2906014>*
+2019-12-07, 00:20
+There's always DSPlayer in serious need of some love. Maybe you two
+could work on it together, once HDR is implemented in Windows?
+For troubleshooting and bug reporting please make sure you read this
+first <https://forum.kodi.tv/showthread.php?tid=323719>.
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=19141>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906014>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906014>
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>
+*fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031>* //
+Fan
+Posts: 549
+Joined: Jan 2014
+Reputation: *186* <https://forum.kodi.tv/reputation.php?uid=201031>
+<https://forum.kodi.tv/member.php?action=profile&uid=201031>
+fandangos <https://forum.kodi.tv/member.php?action=profile&uid=201031> //
+Fan
+Posts: 549
+*#12
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906015#pid2906015>*
+2019-12-07, 00:28
+
+    (2019-12-07, 00:20)ashlar Wrote:
+    <https://forum.kodi.tv/showthread.php?pid=2906014#pid2906014>
+
+    There's always DSPlayer in serious need of some love. Maybe you two
+    could work on it together, once HDR is implemented in Windows?
+
+
+This is halted for now on my end. I'm dedicating a good time to my
+family since I'm finally at home now. 
+
+Still, Jogal seems like a WAY better coder than I'm. I have placed 80%
+of DSplayer code by hand on the correct places. 
+I would enjoy working on this while learning from someone else that
+knows more than me.
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=201031>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906015>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906015>
+<https://forum.kodi.tv/member.php?action=profile&uid=19141>
+**ashlar* <https://forum.kodi.tv/member.php?action=profile&uid=19141>* //
+Donor
+Posts: 3,191
+Joined: Mar 2006
+Reputation: *95* <https://forum.kodi.tv/reputation.php?uid=19141>
+<https://forum.kodi.tv/member.php?action=profile&uid=19141>
+*ashlar* <https://forum.kodi.tv/member.php?action=profile&uid=19141> //
+Donor
+Posts: 3,191
+*#13
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906016#pid2906016>*
+2019-12-07, 00:39
+
+    (2019-12-07, 00:28)fandangos Wrote:
+    <https://forum.kodi.tv/showthread.php?pid=2906015#pid2906015>
+
+        (2019-12-07, 00:20)ashlar Wrote:
+        <https://forum.kodi.tv/showthread.php?pid=2906014#pid2906014>
+
+        There's always DSPlayer in serious need of some love. Maybe you
+        two could work on it together, once HDR is implemented in Windows?
+
+
+    This is halted for now on my end. I'm dedicating a good time to my
+    family since I'm finally at home now. 
+
+    Still, Jogal seems like a WAY better coder than I'm. I have placed
+    80% of DSplayer code by hand on the correct places. 
+    I would enjoy working on this while learning from someone else that
+    knows more than me. 
+
+Yeah, if you two could work together it would be fantastic. Also, it's
+worth mentioning, Team Kodi is looking for Windows developers for the
+main release.
+For troubleshooting and bug reporting please make sure you read this
+first <https://forum.kodi.tv/showthread.php?tid=323719>.
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=19141>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906016>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906016>
+<https://forum.kodi.tv/member.php?action=profile&uid=103653>
+*NVivas <https://forum.kodi.tv/member.php?action=profile&uid=103653>* //
+Newbie
+Posts: 5
+Joined: Oct 2011
+Reputation: *0* <https://forum.kodi.tv/reputation.php?uid=103653>
+<https://forum.kodi.tv/member.php?action=profile&uid=103653>
+NVivas <https://forum.kodi.tv/member.php?action=profile&uid=103653> //
+Newbie
+Posts: 5
+*#14
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906045#pid2906045>*
+2019-12-07, 02:52
+Hello.
+
+Dunno if this is the right place to post my testing. But here goes,
+nonetheless.
+
+I have tested it on my Omen laptop.
+Intel i7-8750 with 16gb Ram
+Nvidia 1060.
+
+All drivers and windows software are up to date.
+
+The TV (Samsung with HDR) now sucessfully detects HDR as soon as i
+launch Kodi. So this is a BIG improvement for me.
+but
+Video playback is very bad with constant shuttering.
+
+Also, after returning from video playback, the color of the images
+(covers) from movies seem oversaturated.
+
+Tested it with 3 different 4kHDR video files.
+
+@
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=103653>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906045>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906045>
+<https://forum.kodi.tv/member.php?action=profile&uid=103653>
+*NVivas <https://forum.kodi.tv/member.php?action=profile&uid=103653>* //
+Newbie
+Posts: 5
+Joined: Oct 2011
+Reputation: *0* <https://forum.kodi.tv/reputation.php?uid=103653>
+<https://forum.kodi.tv/member.php?action=profile&uid=103653>
+NVivas <https://forum.kodi.tv/member.php?action=profile&uid=103653> //
+Newbie
+Posts: 5
+*#15
+<https://forum.kodi.tv/showthread.php?tid=349861&pid=2906050#pid2906050>*
+2019-12-07, 03:21
+
+    (2019-12-07, 02:52)NVivas Wrote:
+    <https://forum.kodi.tv/showthread.php?pid=2906045#pid2906045>
+
+    Hello.
+
+    Dunno if this is the right place to post my testing. But here goes,
+    nonetheless.
+
+    I have tested it on my Omen laptop.
+    Intel i7-8750 with 16gb Ram
+    Nvidia 1060.
+
+    All drivers and windows software are up to date.
+
+    The TV (Samsung with HDR) now sucessfully detects HDR as soon as i
+    launch Kodi. So this is a BIG improvement for me.
+    but
+    Video playback is very bad with constant shuttering.
+
+    Also, after returning from video playback, the color of the images
+    (covers) from movies seem oversaturated.
+
+    Tested it with 3 different 4kHDR video files.
+
+    @
+
+Update:
+
+After installing HEVC from the windows store:
+https://go.skimresources.com/?id=19619X7...52d4fc98aa
+<https://go.skimresources.com/?id=19619X769413&isjs=1&jv=13.25.1-stackpath&sref=https%3A%2F%2Fforum.videohelp.com%2Fthreads%2F394116-New-PC-pls-recommend-me-a-media-player-etc-to-test-4k-hdr-playback&url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fp%2Fhevc-video-extensions-from-device-manufacturer%2F9n4wgh0z6vhq%23activetab%3Dpivot%3Aeek%3Averviewtab&xguid=1c22fa9081fe54172189522206dca12f&xs=1&xtz=0&xuuid=b8080c97a437d4cbc2137652d4fc98aa>
+
+I can now play all the files without any problem, with the TV correctly
+reporting HDR.
+
+(i do have to turn it "on" the TV though as opposed to using PS4 and the
+TV turning it on automatically).
+Reply
+Find <https://forum.kodi.tv/search.php?action=finduser&uid=103653>
+Reply <https://forum.kodi.tv/newreply.php?tid=349861&replyto=2906050>
+Quick Edit <javascript:;>
+Full Edit <https://forum.kodi.tv/editpost.php?pid=2906050>
+
+  * 1(current) <#>
+  * 2 <https://forum.kodi.tv/showthread.php?tid=349861&page=2>
+  * 3 <https://forum.kodi.tv/showthread.php?tid=349861&page=3>
+  * 4 <https://forum.kodi.tv/showthread.php?tid=349861&page=4>
+  * 5 <https://forum.kodi.tv/showthread.php?tid=349861&page=5>
+  * 58 <https://forum.kodi.tv/showthread.php?tid=349861&page=58>
+  * Next // <https://forum.kodi.tv/showthread.php?tid=349861&page=2>
+     //  <https://forum.kodi.tv/showthread.php?tid=349861&page=2>
+    //
+      o Jump to page:
+
+ 
+*Thread Rating:
+
+*
+
+  * 2 Vote(s) - 4.5 Average
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=5&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=4&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=3&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=2&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+  * <https://forum.kodi.tv/ratethread.php?tid=349861&rating=1&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+
+
+
+  * View a Printable Version
+    <https://forum.kodi.tv/printthread.php?tid=349861>
+  * Subscribe to this thread
+    <https://forum.kodi.tv/usercp2.php?action=addsubscription&tid=349861&my_post_key=a4f33fa90a90d39a208022656589865a>
+
+
+// Home <https://forum.kodi.tv/index.php>
+// Search <https://forum.kodi.tv/search.php>
+// Help <https://forum.kodi.tv/misc.php?action=help>
+// Logout <https://forum.kodi.tv/member.php?action=logout&logoutkey=> //
+Mark Read <https://forum.kodi.tv/misc.php?action=markread> // Team
+<https://forum.kodi.tv/showteam.php> // Forum Stats
+<https://forum.kodi.tv/stats.php> // Members
+<https://forum.kodi.tv/memberlist.php> // Help
+<https://forum.kodi.tv/misc.php?action=help>
+
+
+      Kodi Logo
+
+About Us <https://kodi.tv/about/> | Contact Us
+<https://kodi.tv/contact-kodi-team/> | Privacy
+<https://kodi.tv/kodi-privacy-policy/>
+
+  * // <https://www.facebook.com/XBMC/>
+  * // <https://twitter.com/KodiTV>
+  * // <https://www.youtube.com/user/teamxbmc>
+  * // <https://github.com/xbmc/xbmc>
+  * // <https://forum.kodi.tv/syndication.php>
+  * Donate <https://kodi.tv/contribute/donate>
+
+Theme by Mishar DESIGN, modded by Team Kodi
+
+Copyright © 2017 XBMC Foundation
+
+
+      Quick Links
+
+  * View New Posts <https://forum.kodi.tv/search.php?action=getnew>
+  * Lite (Archive) Mode
+    <https://forum.kodi.tv/archive/index.php?thread-349861.html>
+  * Forum Rules <https://kodi.wiki/view/Forum%20rules>
+
+
+      About Kodi
+
+Kodi is a free and open source media player application developed by the
+XBMC Foundation, a non-profit technology consortium.
+
+Kodi is available for multiple operating-systems and hardware platforms,
+featuring a 10-foot user interface for use with televisions and remote
+controls. It allows users to play and view most videos, music, podcasts,
+and other digital media files from local and network storage media and
+the internet.
+
+  * About Us <https://kodi.tv/about/>
+  * Contact Us <https://kodi.tv/contact-kodi-team/>
+  * Privacy <https://kodi.tv/kodi-privacy-policy/>
+
+Cookies and analytics help us improve Kodi. By using this website, you
+agree to our use of cookies and analytics. Learn More
+<https://kodi.tv/kodi-privacy-policy>
+
+Linear Mode
+<https://forum.kodi.tv/showthread.php?mode=linear&tid=349861&pid=2905985#pid2905985>
+Threaded Mode
+<https://forum.kodi.tv/showthread.php?mode=threaded&tid=349861&pid=2905985#pid2905985>
+Kodi Matrix 19.0 HDR Windows API4.52
