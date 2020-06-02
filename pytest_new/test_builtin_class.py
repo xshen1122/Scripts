@@ -1,17 +1,19 @@
 # coding: utf-8
 
+#sample1: 改写__new__
 class IntTuple(tuple):
     #下面的new要重点理解
-    def __new__(cls, iterable):
-        g=(x for x in iterable if isinstance(x,int) and x>0)
+    def __new__(cls, gene):
+        g=(x for x in gene if isinstance(x,int) and x>0)
         return super(IntTuple,cls).__new__(cls,g)
 
-    def __int__(self,iterable):
+    def __int__(self,gene):
         print self
         #before
-        super(IntTuple,self).__init__(iterable)
+        super(IntTuple,self).__init__(gene)
         #after
 
+#sample2:利用__slot__减少属性值占用内存
 class Player1(object):
     def __init__(self,uid,name,status=0,level=1):
         self.uid=uid
@@ -30,6 +32,6 @@ class Player2(object):
         self.level=level
 
 
-# if __name__ == '__main__':
-#     # t=IntTuple([1,-1,'abc',[3,4],7])
-#     # print t
+if __name__ == '__main__':
+    t=IntTuple([1,-1,'abc',[3,4],7])
+    print t
