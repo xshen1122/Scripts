@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53b3cbe5-0e24-4dd1-9af6-f3a3fa96862d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_crypto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_event2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_event3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_event4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_threads.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_unittest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_thread1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_thread2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,63 +15,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_builtin_class.py">
+        <entry file="file://$PROJECT_DIR$/test_event4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_threads.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+            <state relative-caret-position="456">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding>
-                <element signature="e#218#247#0" expanded="true" />
+                <element signature="e#32#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_event.py">
+        <entry file="file://$PROJECT_DIR$/test_thread1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_event2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_event3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="e#54#70#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_event4.py">
+        <entry file="file://$PROJECT_DIR$/test_thread2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="418">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding>
-                <element signature="e#32#48#0" expanded="true" />
+                <element signature="e#17#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,6 +87,8 @@
         <option value="$PROJECT_DIR$/test_event2.py" />
         <option value="$PROJECT_DIR$/test_event3.py" />
         <option value="$PROJECT_DIR$/test_event4.py" />
+        <option value="$PROJECT_DIR$/test_thread1.py" />
+        <option value="$PROJECT_DIR$/test_thread2.py" />
       </list>
     </option>
   </component>
@@ -169,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_event4">
+  <component name="RunManager" selected="Python.test_thread2">
     <configuration name="test_event" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pytest_new" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,27 +149,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_event.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_event2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pytest_new" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_event2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,27 +199,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_unittest.WeatherTest.test_weather_para_no" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="test_thread1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pytest_new" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_unittest.WeatherTest.test_weather_para_no&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_thread1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_thread2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytest_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_thread2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_thread2" />
+        <item itemvalue="Python.test_thread1" />
         <item itemvalue="Python.test_event4" />
         <item itemvalue="Python.test_event3" />
         <item itemvalue="Python.test_event" />
-        <item itemvalue="Python.test_event2" />
-        <item itemvalue="Python tests.Unittests for test_unittest.WeatherTest.test_weather_para_no" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +286,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3202312" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37109828" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -486,10 +459,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_builtin_class.py">
+    <entry file="file://$PROJECT_DIR$/test_event.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="468">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_threads.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+          <folding>
+            <element signature="e#218#247#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -500,39 +483,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_event.py">
+    <entry file="file://$PROJECT_DIR$/test_builtin_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        <state relative-caret-position="342">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_event3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="544">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#54#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_threads.py">
+    <entry file="file://$PROJECT_DIR$/test_event4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+        <state relative-caret-position="456">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding>
-            <element signature="e#218#247#0" expanded="true" />
+            <element signature="e#32#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_event4.py">
+    <entry file="file://$PROJECT_DIR$/test_thread1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="190">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_thread2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
-            <element signature="e#32#48#0" expanded="true" />
+            <element signature="e#17#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
