@@ -11,8 +11,31 @@ list，set，dict,str
 2. 模拟数据
 3. 实现功能
 '''
-from fackbook_data import mock_data
+import fackbook_data
+from cmd.friend_list import show_list, find, find_by_id
 
 
-names, records = mock_data()
-print records
+def print_usage():
+    print '请输入以下命令'
+    print 'list:显示名单'
+    print 'zhangsan:'
+    print '886:quit'
+
+print_usage()
+
+
+
+
+
+while True:
+    cmd = raw_input('your choice:')
+
+    if str(cmd) == '886':
+        print 'byebye'
+        break
+    elif str(cmd) == 'list':
+        show_list()
+    elif cmd.isdigit():
+        find_by_id(cmd)
+    else:
+        find(cmd)
